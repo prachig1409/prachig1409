@@ -1,0 +1,84 @@
+<html>
+
+<style>
+    body  
+    {  
+        margin: 0;  
+        padding: 0;  
+        background-color: #6abadeba ;  
+        font-family: 'Arial';  
+    }  
+    .login{  
+            width: 310px;  
+            overflow: hidden;  
+            margin: auto;   
+            padding: 80px;  
+            background: #23463f;  
+            border-radius: 15px ;  
+          }  
+
+    h1{
+       text-align:center;
+       padding:30px;
+      }
+    
+    h2 {
+	color: #277582;      
+        text-align: center;
+	text-decoration: underline;
+       }  
+    label{  
+        color: #08ffd1;  
+        font-size: 18px;  
+    }  
+    #username{  
+        width: 300px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;  
+    }  
+    #password{  
+        width: 300px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;  
+          
+    }  
+    #log{  
+        width: 300px;  
+        height: 35px;  
+        border: 3px solid #08ffd1 ;  
+        border-radius: 17px;  
+        padding-left: 7px;  
+        color: darkblue;
+	margin:18px 0;	
+        }   
+
+</style>
+
+
+<body>    
+	<center>
+
+    <h1>Network Monitoring Tool</h1>
+    <h2>Login Page</h2><br>    
+    <div class="login">    
+    <form name="login_details" method="post" action="login.php">    
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="username" id="username" placeholder="Username">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="password" name="password" id="password" placeholder="Password">    
+	<br><br><br>
+        <input type="submit" name="log" id="log" value="Log In Here">        
+    </form>     
+</div>    
+	</center>
+</body>    
+</html>    

@@ -1,0 +1,132 @@
+<html>
+	<head><h1>Selection Menu</h1>
+	
+<style>
+
+    body
+    {
+        margin: 0;
+        padding: 0;
+        background-color: #6abadeba ;
+        font-family: 'Arial';
+    }
+
+    .selection
+     {
+          width: 310px;
+          overflow: hidden;		   
+	  margin: auto;
+          padding: 80px;
+          background: #23463f;
+          border-radius: 15px ; 
+      }
+    
+    h1 {
+          text-align:center;
+          padding:30px;
+       }
+
+    h2 {
+          color: #277582;
+          text-align: center;
+          text-decoration: underline;	
+       }
+    
+    label
+    {
+        color: #08ffd1;
+        font-size: 18px;
+    }
+     
+    #log
+    {
+           width: 300px;
+           height: 35px;
+           border: 3px solid #08ffd1 ;
+           border-radius: 17px;
+           text-align:center;
+           color: darkblue;
+           margin:18px 0;
+     }
+    
+    #info
+    {
+            background:#23463f;
+	    color:#08ffd1;
+            font-size:18px;
+            padding:5px;
+            border-radius:17px;
+            border:3px solid #08ffd1;	 
+     }
+    
+    option {
+        	 background: transparent !important;    
+                 color:#08ffd1;
+           }
+
+    #log1{
+          width: 180px;
+          height: 50px;
+          border: 3px solid #277582 ;
+          border-radius: 17px;
+          color: darkblue;
+          background-color: #6abadeba ;
+         }
+
+</style>   
+	
+	
+	</head>
+	
+	<body>
+  
+		<h2>Select your choice</h2>
+		<form action="selection.php" method="POST">
+
+		<div class="selection">	
+		
+		<input type="radio" name="Packets" value="ARP">
+		<label for="ARP">ARP</label><br>
+
+              
+		<input type="radio" name="Packets" value="UDP" >
+		<label for="UDP">UDP</label><br>
+		
+	
+		<input type="radio" name="Packets" value="TCP">
+		<label for="TCP">TCP</label><br><br><br>
+
+
+                 <label for="info">Select:</label>
+                 <select name="info" id="info">           
+                  <option value="all">All Data</option>  
+                  <option value="timestamp">Timestamp</option>
+                  <option value="sip">Source IP</option>
+                  <option value="dip">Destination IP</option>
+                  <option value="port">Port</option>
+		  <option value="smac">Source MacAddress</option>
+		  <option value="dmac">Destination MacAddress</option>
+		  <option value="paclen">Packet length</option>
+                 </select>
+                  <br>
+
+
+
+		  <br><br>
+		  <input type="submit" name="log" id="log"  value="Submit">
+                  </div>
+                  </form>
+
+                  <center>
+
+        	  <br><br><br>
+                <form action="analysis.html">
+                <input type="submit" name="log1" id="log1"  value="Back">
+                </form>
+
+                </center>
+
+	</body>
+
+</html>
+

@@ -1,0 +1,107 @@
+<html>
+        <head><h1>TOP TALKER</h1>
+
+<style>
+
+    body
+    {
+        background-color: #6abadeba ;
+        font-family: 'Arial';
+    }
+
+    .cont {
+            width: 380px;
+            overflow: hidden;
+            margin: auto;
+            margin: 50px 0 0 0;
+            padding: 30px;
+            background: #6abadeba;
+            border-radius: 15px ;
+            display: flex;
+          }
+
+    .box
+    {
+            width: 300px;
+            height: 400px;
+            overflow: hidden;
+            margin: 20px;
+            padding: 20px;
+            background: #23463f;
+            border-radius: 15px ;
+    }
+
+    h1 {
+       text-align: center;
+       padding: 30px;
+       }
+
+    h2 {
+        color: #277582;
+        text-align: center;
+        text-decoration: underline;
+       }
+
+    label {
+        color: #08ffd1;
+        font-size: 20px;
+          }
+
+    #log{
+        width: 180px;
+        height: 50px;
+        border: 3px solid #08ffd1 ;
+        border-radius: 17px;
+        color: darkblue;
+        border: 3px solid #08ffd1;
+         }
+
+    #log1{
+        width: 180px;
+        height: 50px;
+        border: 3px solid #277582 ;
+        border-radius: 17px;
+        color: darkblue;
+        background-color: #6abadeba ;
+         }
+
+</style>
+
+
+        </head>
+
+        <body>
+
+                <h2>Select your choice</h2>
+                <center>
+                <div class="cont">
+
+                <div class="box">
+                <br>
+		<label><b>Select a protocol for Number of Packets:</b></label>
+		<br><br><br><br>
+                <form action="arp_packets.php">
+		<input type="submit" name="log" id="log"  value="ARP">
+		</form>
+		<br><br>
+                <form action="udp_packets.php">
+		<input type="submit" name="loig" id="log"  value="UDP">
+		</form>
+		<br><br>
+                <form action="tcp_packets.php">
+		<input type="submit" name="log" id="log"  value="TCP">
+		</form>
+		</div>
+
+                </div>
+
+                <br><br><br>
+                <form action="analysis.html">
+                <input type="submit" name="log1" id="log1"  value="Back">
+                </form>
+
+                </center>
+
+	</body>
+
+</html>
